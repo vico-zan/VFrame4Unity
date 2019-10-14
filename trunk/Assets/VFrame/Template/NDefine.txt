@@ -1,0 +1,38 @@
+﻿namespace VFrame {
+    public enum NScene {
+        //	Everything = -1,
+        //	Nothing = 0,
+        Load = 1,
+        Title = 2,
+        City = 4,
+    }
+
+    public enum NPage {
+        FrameSelect,
+        FrameConfirm,
+        Tooltip,
+
+        Loading,
+
+        Sample,
+
+        CityMain,
+        RoomMain,
+        CityScene,
+        RoomScene,
+    }
+
+    public enum UIMSG {
+        Enable,
+        Disable,
+        DisableComplete,
+
+        SetTipText,
+
+        SwitchBuilding,
+        SwitchRoom,
+
+        OperEnable,
+    }
+
+}

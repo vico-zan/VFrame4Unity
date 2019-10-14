@@ -1,0 +1,31 @@
+﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+public static class UserData {
+    //system var
+    public static bool DebugMode = false;
+    public static bool OnlineMode = false;
+    public static float UIScreenX;
+    public static float UIScreenY;
+
+    //game var
+    public static Dictionary<string, string> m_tutors;
+    public static string IPLogin = "127.0.0.1:9300";
+
+    public static Queue<string> NetMessage = new Queue<string> ();
+
+    //function
+    static UserData () {
+        Debug.Log ("UserData Init");
+        //init tutor
+        //if (m_tutors == null) {
+        //    m_tutors = new Dictionary<int, string> ();
+
+        //    DataAssetLocalization tutors = Resources.Load<DataAssetLocalization> ("Data/Localize");
+        //    foreach (LocalizationItem item in tutors.m_items) {
+        //        UserData.m_tutors.Add (item.m_key, item.m_contents);
+        //    }
+        //}
+    }
+}
